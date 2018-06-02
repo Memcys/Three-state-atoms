@@ -1,0 +1,125 @@
+\documentclass{book}
+
+\usepackage{amsmath}
+\usepackage[normalem]{ulem}	% \uline in substitution for \underline
+
+\author{Bruce W. Shore}
+\title{The Theory of Coherent Atomic Excitation\\Volume 2\\Multilevel Atoms and Incoherence}
+
+\setcounter{chapter}{13}	% Chapter 13
+
+\begin{document}
+
+\noindent
+approximation: it gives the equation
+\begin{equation}
+	\frac{\mathrm d}{\mathrm d t}C_1 = - i \Delta _1 C_1 - \frac{i}{2} \Omega _1^* C_2
+\end{equation}
+where the coefficients are
+\begin{equation}
+	\hbar \Delta _1 = E_1 - \hbar \dot{ \zeta _1 }
+\end{equation}
+\begin{equation}
+\label{eq:13.1-7b}
+	\hbar \Omega _1^* = - \mathrm d_12 \cdot \epsilon _1^* \mathcal{E}_1^*\
+	\qquad or \qquad \hbar \Omega _1 = - \mathrm{d_21} \cdot \epsilon _1 \mathcal{E}_1.
+\end{equation}
+The appearance in this equation of $\Omega _1^*$, rather than $\Omega _1$, follows the convention of pairing $\Omega$ with the positive-frequency amplitude $\mathcal{E}$ and pairing $\Omega^*$ with $\mathcal{E}^*$.
+
+Phase choice (13.1-4) %{need to insert \ref}
+is suitable only when $E_1 < E_2$. If, instead, state 2 has the lower energy of this pair, then we must choose
+\begin{equation}
+	\dot{\zeta _2} = \dot{\zeta_1} - \omega _1,
+\end{equation}
+from which we obtain the equation
+\begin{equation}
+	\frac{\mathrm d}{\mathrm d t} C_1 = - i \Delta _1 C_1 - \frac{i}{2} \Omega _1' C_2.
+\end{equation}
+The Rabi frequency $\Omega _1' $that appears here differs from that of Eqn. \ref{eq:13.1-7b} by complex conjugation of the field [cf. Eqn. (10.1-22)]:
+\begin{equation}
+	\hbar \Omega ' = - \mathrm{d_12} \cdot \epsilon _1 \mathcal{E}_1.
+\end{equation}
+We may note in passing that, just as in the two-state RWA, we are at liberty to add to $ \zeta _2 $ a time-independent constant such that $ \Omega _1 $is real and non-negative at some instant of time. This additional phase does not affect the coefficients nor does it alter the RWA. If the phase of $ \mathcal{E}_1 $ remains constant, $\Omega _1 $remains real. However, when we allow phase variations (as we must in treating propagation or fluctuations) then we cannot necessarily assume the Rabi frequencies remain real at all times.
+
+\bigskip\noindent
+\textbf{The Second Equation.} The second equation, for the time derivative of $ C_2 $, has on its right hand side four exponential terms as coefficients of $ C_1 $ coefficients are those considered above; the $ C_3 $arguments are
+\iffalse
+\begin{itemize}
+	\item $ ( \zeta _3 - \zeta _2 + \omega _1 t ) $,
+	\item $ ( \zeta _3 - \zeta _2 + \omega _2 t ) $,
+	\item $ ( \zeta _3 - \zeta _2 - \omega _1 t ) $,
+	\item $ ( \zeta _3 - \zeta _2 - \omega _2 t ) $.
+\end{itemize}
+\fi
+\begin{align*}
+	& ( \zeta _3 - \zeta _2 + \omega _1 t ),
+	& ( \zeta _3 - \zeta _2 + \omega _2 t ),\\
+	& ( \zeta _3 - \zeta _2 - \omega _1 t ),
+	& ( \zeta _3 - \zeta _2 - \omega _2 t ).
+\end{align*}
+Again a suitable choice of phases can eliminate time variation from one exponential, leaving terms that oscillate rapidly and so average to zero in the RWA. The choice depends upon whether $ E_3 $ lies above or below $ E_3 $. If $ E_2 < E_3 $then we choose
+\begin{equation}
+\dot{ \zeta _3 } = \dot{ \zeta _2 } + \omega _2
+\end{equation}
+so that the exponential arguments become
+\begin{align*}
+	& ( \omega _2 + \omega _1 ) t,
+	& ( \omega _2 - \omega _1 ) t,
+	& 2 \omega _2 t,
+\end{align*}
+Upon replacing the exponentials with their time averages (zero or unity) we obtain the second-step RWA equation (under the assumption $ E_1 < E_2 $)
+\begin{equation}\label{eq:13.1-12}
+	\frac{\mathrm d}{\mathrm d t} C_2 = - i \Delta _2 C_2 - \frac{i}{2} [ \Omega _1 C_1 + \Omega _2^* C_3]
+\end{equation}
+where the coefficients are
+\begin{equation}
+	\hbar \Delta _2 = E_2  - E_1 - \hbar \omega _1 + \hbar \Delta _1
+\end{equation}
+\begin{equation}
+\label{eq:13.1-13b}
+	\hbar \Omega _2 * = - \mathrm {d_{23}} \cdot \epsilon _2 * \mathcal{E}_2 *\
+	\qquad or \qquad \hbar \Omega _2 = - \mathrm{d_{32}} \cdot \epsilon _2 \mathrm{E}_2.
+\end{equation}
+This expression for $ \Delta _2 $ applies when $ E_1 < E_2 $. When the energy ranking is instead $ E_1 > E_2 $the diagonal element appears as
+\begin{equation}
+	\hbar \Delta _2 = \hbar \omega _1 - ( E_1 - E_2 ) + \hbar \Delta _1
+\end{equation}
+and the coefficient of $ C_1 $ becomes $ ( \Omega _1 ')* $. If $ E_3 < E_2 $ then the proper choice of phases is
+\begin{equation}
+	\dot{ \zeta _3 } = \dot{ \zeta _2 } - \omega _2
+\end{equation}
+with corresponding modification of the formula for $ \Delta _3 $ and $ \Omega _2 $; in place of Eqn. \ref{eq:13.1-13b} we have the formula
+\begin{equation}
+	\hbar \Omega _2 ' = - \mathrm{ d_{23} } \cdot \epsilon _2 \mathcal{E}_2.
+\end{equation}
+
+\bigskip\noindent
+\textbf{The Third Equation.} The foregoing phase choices produce, without further phase assignment, the third and final RWA equation. Along with Eqn. \ref{eq:13.1-12}we obtain the equation
+\begin{equation}
+	\frac{\mathrm d}{\mathrm d t} C_3 = - i \Delta _3 C_3 + \frac{i}{2} \Omega _2 C_2.
+\end{equation}
+Here, with the ordering $ E_3 > E_2 > E_1 $, the diagonal element is
+\begin{equation}
+	\hbar \Delta _3 = E_3 - \hbar \dot{ \zeta _3 } = E_3 - E_1 - \hbar \omega _1 - \hbar \omega _2 + \hbar \Delta _1.
+\end{equation}
+As with the first-step equation, a suitable constant term added to the phase $ \zeta _3 $ can make $ \Omega _2 $ real and nonnegative at time $ t = 0 $.
+
+\bigskip\noindent
+\textbf{The RWA Equations.} These phase choices, together with the neglect of exponentials having arguments
+\begin{align*}
+	2 \omega _1 t, \qquad 2 \omega _2 t, \qquad ( \omega _1 \pm \omega _2 ) t,
+\end{align*}
+produce from the Schr\"odinger equation a set of three coupled equations
+\begin{equation}
+	\frac{ \mathrm d }{ \mathrm d t } C_n (t) = - i \sum_m W_{nm} C_m (t) \qquad \text{or}\
+	\frac{ \mathrm d }{ \mathrm d t } C(t) = - i W C(t).
+\end{equation}
+We can \textit{supplement the detunings and Rabi frequencies that provide the elements of the matrix $ W $ with \uline{non-Hermitian} diagonal elements to model probability loss.} When the energy ordering is $ E_1 < E_2 < E_3 $ the $ 3 \cross 3 $ RWA Hamiltonian matrix $ W $is
+\begin{equation}
+	[W] = \frac{1}{2}
+	\begin{matrix}
+		2 \Delta _1 - i \Gamma _1	&	\Omega _1 *	&	0\\
+		
+
+\end{document}
+
